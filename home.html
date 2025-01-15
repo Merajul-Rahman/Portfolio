@@ -6,31 +6,213 @@
     <title>Md. Merajul Rahman Shipon</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://kit.fontawesome.com/7618a7e6ef.js" crossorigin="anonymous"></script>
+
 </head>
 <body class="bg-black">
   <main class="main text-white">
     <aside class="sidebar">
       <nav class="nav">
         <ul>
-          <li class="active"><a href="#">Welcome</a></li>
-          <li><a href="#">Experiance</a></li>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="active"><a href="#welcome">Welcome</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </aside>
   
-    <section class="twitter">
+    <section id="welcome" class="twitter">
       <div class="imgcontainer">
-          <img src="Profile.png" width="200px" height="350px" style="border-radius: 400%;">
-          <h2>Hello. I am</h2>
-          <h1>Merajul Rahman Shipon</h1>
-          <p>Tech Explorer |🤖 AI Enthusiast |💡 Innovator</p>
-    
+        <div class="profile-section">
+          <img src="Profile.png" alt="Profile Picture" class="profile-pic">
+          <!-- Contact Icons Section -->
+          <div class="contact-icons">
+            <a href="mailto:shiponrbm@gmail.com" target="_blank" class="contact-icon">
+              <i class="fa fa-envelope"></i>
+            </a>
+            <a href="https://github.com/Merajul-Rahman" target="_blank" class="contact-icon">
+              <i class="fa fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/merajul-rahman-shipon" target="_blank" class="contact-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="text-container">
+          <p class="greeting">Hello I am</p>
+          <p class="name">Merajul Rahman Shipon</p>
+          <p class="headings">Tech Explorer | 🤖 AI Enthusiast | 💡 Innovator</p>
+          <p class="description">
+            As a passionate Computer Science graduate with a CGPA of 3.70, I am eager to contribute my knowledge and enthusiasm to the IT industry. 
+            With a strong foundation in programming and other technical skills, I am well-equipped to tackle any complex challenges. 
+            My interpersonal skills will enable me to thrive in any dynamic environment.
+          </p>
+        </div>
       </div>
+      
+      
+      <div id="experience" class="experience-section">
+        <h2 class="section-heading">Experience</h2>
+        <div class="experience-item">
+          <h3 class="job-title">Jr. Executive - MIS & System Development</h3>
+          <p class="company-name">Masco Group</p>
+          <p class="job-duration">January 2025 – Present</p>
+          <ul class="job-responsibilities">
+            <li>Collaborating with merchandising and software teams to develop ERP systems for the company.</li>
+            <li>Assisting in system development for seamless operations across departments.</li>
+            <li>Exploring potential AI integration into data analysis workflows.</li>
+          </ul>
+        </div>
+      </div>
+      <div id="education" class="education-section">
+        <h2 class="section-heading">Education</h2>
+        <div class="education-item">
+          <h3 class="degree">Bachelor of Science in Engineering (B.Sc. Engg.)</h3>
+          <p class="institution">Rajshahi University of Engineering and Technology (RUET)</p>
+          <p class="duration">February 2019 - May 2024</p>
+          <p class="result">Result: CGPA 3.70</p>
+        </div>
+        <div class="education-item">
+          <h3 class="degree">Higher Secondary School Certificate (HSC)</h3>
+          <p class="institution">M E H Arif College, Gazipur</p>
+          <p class="duration">2016 - 2018</p>
+          <p class="result">Result: GPA 5.00</p>
+        </div>
+        <div class="education-item">
+          <h3 class="degree">Secondary School Certificate (SSC)</h3>
+          <p class="institution">Rani Bilasmoni Government Boys High School, Gazipur</p>
+          <p class="duration">2011 - 2016</p>
+          <p class="result">Result: GPA 5.00</p>
+        </div>
+      </div>
+      <div id="skills" class="skills-section">
+        <h2 class="section-heading">Skills</h2>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3 class="skill-title">Technical Skills</h3>
+            <ul class="skill-list">
+              <li>Programming Languages: C, C++, Python, MATLAB</li>
+              <li>Database Management Systems: MySQL, SQL Server</li>
+              <li>Web Development: HTML, CSS, PHP</li>
+              <li>Software & Tools: MS Office, Visual Studio, Android Studio</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-title">Soft Skills</h3>
+            <ul class="skill-list">
+              <li>Leadership & Teamwork</li>
+              <li>Communication</li>
+              <li>Problem-Solving</li>
+              <li>Analytical & Critical Thinking</li>
+              <li>Decision Making</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="projects" class="projects-section">
+        <h2 class="section-heading">Projects & Works</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <a href="https://github.com/Merajul-Rahman/Namaz-Time" class="project-link">
+              <div class="card-header">Namaz App</div>
+              <div class="card-body">
+                <p>This mobile app tracks prayer times globally and includes offline features for Dhaka, Bangladesh.</p>
+              </div>
+              <div class="card-footer">Technologies: Java, Android Studio</div>
+            </a>
+          </div>
+          <div class="project-card">
+            <a href="https://github.com/Merajul-Rahman/RUETian-" class="project-link">
+              <div class="card-header">RUETian App</div>
+              <div class="card-body">
+                <p>A mobile app for RUET students with syllabus, routines, and essential institution info.</p>
+              </div>
+              <div class="card-footer">Technologies: Java, Android Studio</div>
+            </a>
+          </div>
+          <div class="project-card">
+            <a href="https://github.com/Merajul-Rahman/Project-3-1" class="project-link">
+              <div class="card-header">Agriculture Help Desk Website</div>
+              <div class="card-body">
+                <p>A website featuring blogging, e-commerce, and live chat for agricultural products.</p>
+              </div>
+              <div class="card-footer">Technologies: HTML, CSS, PHP</div>
+            </a>
+          </div>
+          <div class="project-card">
+            <a href="https://github.com/Merajul-Rahman/Project-3-1" class="project-link">
+              <div class="card-header">Data Analysis</div>
+              <div class="card-body">
+                <p>A website featuring blogging, e-commerce, and live chat for agricultural products.</p>
+              </div>
+              <div class="card-footer">Technologies: HTML, CSS, PHP</div>
+            </a>
+          </div>
+          <div class="project-card">
+            <a href="https://github.com/Merajul-Rahman/Project-3-1" class="project-link">
+              <div class="card-header">Technical Writing</div>
+              <div class="card-body">
+                <p>A website featuring blogging, e-commerce, and live chat for agricultural products.</p>
+              </div>
+              <div class="card-footer">Technologies: HTML, CSS, PHP</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="contact-section">
+        <h2 class="section-heading">Contact</h2>
+        <form action="mailto:shiponrbm@gmail.com" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+      
+    
+         
     </section>
   </main>
 </body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section, .experience-section, .education-section, .skills-section, .projects-section, .contact-section");
+    const navLinks = document.querySelectorAll(".nav ul li a");
+
+    function setActiveSection() {
+      let index = sections.length;
+
+      while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
+      
+      navLinks.forEach((link) => link.parentElement.classList.remove("active"));
+      navLinks[index].parentElement.classList.add("active");
+    }
+
+    window.addEventListener("scroll", setActiveSection);
+
+    // Smooth scrolling for clicks
+    navLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute("href").substring(1);
+        document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  });
+</script>
+
 </html>
