@@ -20,7 +20,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="CV_Shipon_RUET_CSE.pdf" download="CV_Merajul_Rahman_Shipon_RUET_CSE.pdf">Download CV</a></li>
+          <li><a href="CV_Shipon_RUET_CSE.pdf" download="CV_Merajul_Rahman_Shipon_RUET_CSE.pdf" target="_blank">Download CV</a></li>
         </ul>
       </nav>
     </aside>
@@ -245,6 +245,10 @@
     // Smooth scrolling for clicks
     navLinks.forEach((link) => {
       link.addEventListener("click", (event) => {
+        // Skip links with a "download" attribute or external links
+      if (link.hasAttribute("download") || link.getAttribute("target") === "_blank") {
+        return;
+      }
         event.preventDefault();
         const targetId = link.getAttribute("href").substring(1);
         document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
