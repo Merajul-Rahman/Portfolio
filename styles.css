@@ -8,6 +8,100 @@ html {
   background: radial-gradient(circle, rgba(56,214,247,1) 10%, rgba(60,130,212,1) 100%);
 }
 
+/* Add this section for responsiveness */
+@media only screen and (max-width: 1200px) {
+  /* For tablets and smaller laptops */
+  .sidebar {
+    width: 25%; /* Adjust sidebar width */
+  }
+  .mainbody {
+    width: 75%; /* Adjust main content width */
+  }
+  .nav {
+    margin: 0 10%; /* Adjust navigation spacing */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For tablets and larger smartphones */
+  html {
+    font-size: 14px; /* Reduce base font size for smaller screens */
+  }
+  .sidebar {
+    width: 30%; /* Narrower sidebar */
+  }
+  .mainbody {
+    width: 70%; /* Wider main body */
+  }
+  .nav ul li {
+    margin: 2em 0; /* Reduce spacing between menu items */
+  }
+  .text-container {
+    font-size: 0.9em; /* Adjust font size for readability */
+  }
+  .profile-pic {
+    width: 150px;
+    height: 160px; /* Scale down profile picture */
+  }
+  .skills-container {
+    flex-direction: column; /* Stack skills vertically */
+    gap: 10px;
+  }
+  .skill-category {
+    width: 100%; /* Full-width skill sections */
+  }
+  .projects-container {
+    flex-direction: column; /* Stack project cards vertically */
+    align-items: center;
+  }
+  .project-card {
+    max-width: 90%; /* Make project cards fit smaller screens */
+  }
+  .education-container {
+    flex-direction: column; /* Stack education cards vertically */
+    align-items: center;
+  }
+  .education-card {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* For smartphones */
+  .sidebar {
+    display: none; /* Hide the sidebar */
+  }
+  .mainbody {
+    width: 100%; /* Full width for main content */
+    margin-left: 0; /* Remove space for sidebar */
+  }
+  .text-container {
+    font-size: 0.8em; /* Smaller font size */
+  }
+  .profile-section {
+    align-items: flex-start; /* Align content to the left */
+    gap: 20px;
+  }
+  .profile-pic {
+    width: 100px;
+    height: 110px; /* Scale profile picture further */
+  }
+  .contact-icons {
+    gap: 10px; /* Reduce spacing between icons */
+  }
+  .form-group {
+    gap: 10px; /* Reduce gaps in the contact form */
+  }
+  .skills-container, .projects-container, .education-container {
+    flex-direction: column; /* Stack all sections vertically */
+    gap: 10px;
+  }
+  .project-card, .education-card {
+    max-width: 100%; /* Full width on mobile */
+  }
+}
+
+
 /* Sidebar */
 .sidebar {
   position: fixed;
@@ -69,6 +163,8 @@ html {
     }
   }
 }
+
+
 
 
 .mainbody {
@@ -310,12 +406,7 @@ button.submit-btn:hover {
   background-color: #ffcc00;
 }
 
-@media screen and (max-width: 768px) {
-  .projects-container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+
 
 .education-container {
   display: flex;
